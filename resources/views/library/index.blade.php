@@ -29,7 +29,7 @@
         </tr>
     </thead>
     <tbody class="">
-        @foreach ($librarys as $library)
+        @foreach ($data as $library)
         <tr class="text-center">
             <td class="text-sm">{{ $library->title }}</td>
             <td class="text-sm">{{ $library->author }}</td>

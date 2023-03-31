@@ -18,8 +18,8 @@ class admin
     public function handle(Request $request, Closure $next)
     {
         $user = Auth::user();
-        if(!$user->role || $user->role !== 'admin'){
-            return redirect('/library');
+        if(!$user || !$user->role || $user->role !== 'admin'){
+        return redirect('/library');
         }
         return $next($request);
     }

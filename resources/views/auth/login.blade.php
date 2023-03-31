@@ -41,7 +41,7 @@
                     <button class="shadow bg-purple-400 hover:bg-purple-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-md float-right mt-3" type="submit">
                         Login
                     </button>
-                    <a href="{{route('password.request')}}" class="btn text-xs mt-3">Forget your password?</a>
+                    {{-- <a href="{{route('password.request')}}" class="btn text-xs mt-3">Forget your password?</a> --}}
                   </div>
                 </div>
               </form>
