@@ -21,8 +21,9 @@
               <li><a href="{{route("register")}}">Register</a></li>
               <li><a href="{{route("login")}}">Login</a></li>
               @else
-              <li><a href="{{route("logout")}}" onclick="event.preventDefault();  
-                document.getElementById('logout-form').submit();">Logout</a>
+              <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();
+                window.location.href='{{ url('/') }}';">Logout</a>
               </li>
               <form action="{{route('logout')}}" id="logout-form" method="POST">
                 @csrf
